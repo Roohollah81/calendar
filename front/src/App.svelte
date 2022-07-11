@@ -38,7 +38,7 @@
 
   div.top {
     width: 450px;
-    height: 110px;
+    height: 130px;
     background-color: rgb(255, 255, 255);
     position: relative;
   }
@@ -57,14 +57,17 @@
 
   span.left {
     left: 0;
+    padding: 35px;
   }
 
   span.right {
     right: 0;
+    padding: 35px;
   }
 
   span {
     position: absolute;
+    padding: 15px 5px 0 5px;
   }
 </style>
 
