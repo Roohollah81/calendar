@@ -57,18 +57,30 @@
 
   span.left {
     left: 0;
-    padding: 35px;
+    padding: 35px !important;
   }
 
   span.right {
     right: 0;
-    padding: 35px;
+    padding: 35px !important;
   }
 
-  span {
+  div.top > span {
     position: absolute;
     padding: 15px 5px 0 5px;
   }
+
+  div.navar {
+    height: 35px;
+    width: 100%;
+    background-color: gray;
+    border-radius: 5px;
+  }
+
+  div.navar > span {
+    padding: 0px 22px 0 22px;
+  }
+
 </style>
 
 <main>
@@ -81,6 +93,15 @@
       <span class="arab">ذوالقعده - ذوالحجه - ١٤٤٣</span>
       <span class="left">ماه بعد</span>
       <span class="right">ماه قبل</span>
+    </div>
+    <div class="navar">
+      <span>ش</span>
+      <span>ي</span>
+      <span>د</span>
+      <span>س</span>
+      <span>چ</span>
+      <span>پ</span>
+      <span>ج</span>
     </div>
   </div>
 </main>
