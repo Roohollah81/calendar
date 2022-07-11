@@ -1,18 +1,9 @@
 <script>
-  import logo from './assets/svelte.png'
-  import Counter from './lib/Counter.svelte'
 </script>
-
-<main>
-  <h1>Time.ir!</h1>
-
-   <div></div>
-</main>
 
 <style>
   :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 
   main {
@@ -36,4 +27,57 @@
       max-width: none;
     }
   }
+
+  div.cadr {
+    width: 450px;
+    height: 500px;
+    background-color: bisque;
+    margin: 2rem auto;
+    padding: 15px;
+  }
+
+  div.top {
+    width: 450px;
+    height: 110px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+  }
+  span.fa {
+    left: 45%;
+    top: 23px;
+  }
+  span.en {
+    left: 35%;
+    top: 50px;
+  }
+  span.arab {
+    left: 30%;
+    top: 75px;
+  }
+
+  span.left {
+    left: 0;
+  }
+
+  span.right {
+    right: 0;
+  }
+
+  span {
+    position: absolute;
+  }
 </style>
+
+<main>
+  <h1>Time.ir!</h1>
+
+  <div class="cadr">
+    <div class="top">
+      <span class="fa">تير 1401</span>
+      <span class="en">June - July 2022</span>
+      <span class="arab">ذوالقعده - ذوالحجه - ١٤٤٣</span>
+      <span class="left">ماه بعد</span>
+      <span class="right">ماه قبل</span>
+    </div>
+  </div>
+</main>
