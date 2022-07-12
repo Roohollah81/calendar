@@ -30,7 +30,7 @@
 
   .cadr {
     width: 450px;
-    height: 600px;
+    height: 615px;
     margin: 2rem auto;
     padding: 15px;
     box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
@@ -43,7 +43,12 @@
     position: relative;
   }
 
-  .fa {
+  span.mah {
+    left: 45%;
+    top: 23px;
+  }
+
+  span.sal {
     left: 45%;
     top: 23px;
   }
@@ -90,7 +95,7 @@
 
   .day {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 18px;
+    padding: 10px 12px;
     font-weight: bold !important;
     font-size: 22px !important;
   }
@@ -98,6 +103,7 @@
   .month {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: 60px 60px 60px 60px 70px;
     background-color: white;
     padding: 8px;
     direction: rtl;
@@ -122,7 +128,7 @@
 
   .button {
     display: inline-block;
-    width: 86%;
+    width: 93%;
     padding: 12px 15px !important;
     color: #fff !important;
     font-size: 14px !important;
@@ -137,14 +143,38 @@
     border-radius: 4px;
   }
 
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+  }
+
+  .holiday > * {
+    color: rgb(255, 0, 0) !important;
+  }
+
+  .out > * {
+    color: rgb(201, 201, 201) !important;
+  }
+
+  .today {
+    border: 2px solid #ed1c24 !important;
+    border-radius: 4px;
+  }
 </style>
 
 <main>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
   <h1>Time.ir!</h1>
 
   <div class="cadr">
     <div class="top">
-      <span class="fa">تير 1401</span>
+      <div class="">
+        <span class="mah">تير</span>
+        <span class="material-symbols-outlined"> expand_more </span>
+      </div>
+      <div class="">
+        <span class="sal">1401</span>
+        <span class="material-symbols-outlined"> expand_more </span>
+      </div>
       <span class="en">June - July 2022</span>
       <span class="arab">ذوالقعده - ذوالحجه - ١٤٤٣</span>
       <span class="left">ماه بعد</span>
@@ -160,17 +190,25 @@
       <div class="letter">ج</div>
     </div>
     <div class="month">
-      <div class="day">
-        <div class="jalali" style="color: gray;">۲۸</div>
+      <div class="day out">
+        <div class="jalali">۲۸</div>
+        <div class="miladi">18</div>
+        <div class="qamari">۱۸</div>
       </div>
-      <div class="day">
-        <div class="jalali" style="color: gray;">۲۹</div>
+      <div class="day out">
+        <div class="jalali">۲۹</div>
+        <div class="miladi">19</div>
+        <div class="qamari">۱۹</div>
       </div>
-      <div class="day">
-        <div class="jalali" style="color: gray;">۳۰</div>
+      <div class="day out">
+        <div class="jalali">۳۰</div>
+        <div class="miladi">20</div>
+        <div class="qamari">۲۰</div>
       </div>
-      <div class="day">
-        <div class="jalali" style="color: gray;">۳۱</div>
+      <div class="day out">
+        <div class="jalali">۳۱</div>
+        <div class="miladi">21</div>
+        <div class="qamari">۲۱</div>
       </div>
       <div class="day">
         <div class="jalali">۱</div>
@@ -182,7 +220,7 @@
         <div class="miladi">23</div>
         <div class="qamari">۲۳</div>
       </div>
-      <div class="day">
+      <div class="day holiday">
         <div class="jalali">۳</div>
         <div class="miladi">24</div>
         <div class="qamari">۲۴</div>
@@ -217,7 +255,7 @@
         <div class="miladi">30</div>
         <div class="qamari">۳۰</div>
       </div>
-      <div class="day">
+      <div class="day holiday">
         <div class="jalali">۱۰</div>
         <div class="miladi">1</div>
         <div class="qamari">۱</div>
@@ -252,7 +290,7 @@
         <div class="miladi">7</div>
         <div class="qamari">۷</div>
       </div>
-      <div class="day">
+      <div class="day holiday">
         <div class="jalali">۱۷</div>
         <div class="miladi">8</div>
         <div class="qamari">۸</div>
@@ -262,7 +300,7 @@
         <div class="miladi">9</div>
         <div class="qamari">۹</div>
       </div>
-      <div class="day">
+      <div class="day holiday">
         <div class="jalali">۱۹</div>
         <div class="miladi">10</div>
         <div class="qamari">۱۰</div>
@@ -272,7 +310,7 @@
         <div class="miladi">11</div>
         <div class="qamari">۱۱</div>
       </div>
-      <div class="day">
+      <div class="day today">
         <div class="jalali">۲۱</div>
         <div class="miladi">12</div>
         <div class="qamari">۱۲</div>
@@ -287,7 +325,7 @@
         <div class="miladi">14</div>
         <div class="qamari">۱۴</div>
       </div>
-      <div class="day">
+      <div class="day holiday">
         <div class="jalali">۲۴</div>
         <div class="miladi">15</div>
         <div class="qamari">۱۵</div>
@@ -302,7 +340,7 @@
         <div class="miladi">27</div>
         <div class="qamari">۲۷</div>
       </div>
-      <div class="day">
+      <div class="day holiday">
         <div class="jalali">۲۷</div>
         <div class="miladi">18</div>
         <div class="qamari">۱۸</div>
@@ -322,7 +360,7 @@
         <div class="miladi">21</div>
         <div class="qamari">۲۱</div>
       </div>
-      <div class="day">
+      <div class="day holiday">
         <div class="jalali">۳۱</div>
         <div class="miladi">22</div>
         <div class="qamari">۲۲</div>
