@@ -31,9 +31,9 @@
   .cadr {
     width: 450px;
     height: 600px;
-    background-color: bisque;
     margin: 2rem auto;
     padding: 15px;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
   }
 
   .top {
@@ -42,17 +42,21 @@
     background-color: rgb(255, 255, 255);
     position: relative;
   }
+
   .fa {
     left: 45%;
     top: 23px;
   }
+
   .en {
     left: 35%;
     top: 50px;
   }
+
   .arab {
     left: 30%;
     top: 75px;
+    color: gray;
   }
 
   .left {
@@ -71,21 +75,22 @@
   }
 
   .navar {
-    height: 35px;
-    width: 100%;
-    background-color: #555;
-    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    background-color: #575757;
+    padding: 8px;
+    direction: rtl;
+    border-radius: 4px;
   }
 
-  .navar > span {
-    padding: 0px 22px 0 22px;
+  .letter {
     color: white;
+    font-size: 11px;
   }
 
   .day {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    padding: 18px;
     font-weight: bold !important;
     font-size: 22px !important;
   }
@@ -93,12 +98,13 @@
   .month {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
-    background-color: #2196f3;
-    padding: 10px;
+    background-color: white;
+    padding: 8px;
+    direction: rtl;
   }
 
   .jalali {
-    color: gray;
+    color: #4c4c4c;
   }
 
   .qamari {
@@ -127,15 +133,27 @@
       <span class="right">ماه قبل</span>
     </div>
     <div class="navar">
-      <span>ش</span>
-      <span>ي</span>
-      <span>د</span>
-      <span>س</span>
-      <span>چ</span>
-      <span>پ</span>
-      <span>ج</span>
+      <div class="letter">ش</div>
+      <div class="letter">ي</div>
+      <div class="letter">د</div>
+      <div class="letter">س</div>
+      <div class="letter">چ</div>
+      <div class="letter">پ</div>
+      <div class="letter">ج</div>
     </div>
     <div class="month">
+      <div class="day">
+        <div class="jalali" style="color: gray;">۲۸</div>
+      </div>
+      <div class="day">
+        <div class="jalali" style="color: gray;">۲۹</div>
+      </div>
+      <div class="day">
+        <div class="jalali" style="color: gray;">۳۰</div>
+      </div>
+      <div class="day">
+        <div class="jalali" style="color: gray;">۳۱</div>
+      </div>
       <div class="day">
         <div class="jalali">۱</div>
         <div class="miladi">22</div>
@@ -291,5 +309,6 @@
         <div class="miladi">22</div>
         <div class="qamari">۲۲</div>
       </div>
+    </div>
   </div>
 </main>
