@@ -119,6 +119,24 @@
     float: right;
     margin: 1px 0 0;
   }
+
+  .button {
+    display: inline-block;
+    width: 86%;
+    padding: 12px 15px !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    font-family: SDF !important;
+    font-weight: bold !important;
+    background: #ed1c24;
+    border: 1px solid #ed1c24;
+    text-shadow: none !important;
+    position: relative;
+    transition: all 400ms ease-in-out;
+    z-index: 0;
+    border-radius: 4px;
+  }
+
 </style>
 
 <main>
@@ -309,6 +327,9 @@
         <div class="miladi">22</div>
         <div class="qamari">۲۲</div>
       </div>
+    </div>
+    <div>
+      <span class="button">برو به امروز</span>
     </div>
   </div>
 </main>
